@@ -1,0 +1,4 @@
+[{<<"test_add">>,
+  {git,"https://github.com/joq62/test_add.git",
+       {ref,"1085fbca50dc1a50664161f14cfc8d1f703405ca"}},
+  0}].

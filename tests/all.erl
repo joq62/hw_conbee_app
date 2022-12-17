@@ -51,10 +51,9 @@ start()->
 setup()->
     io:format("Start ~p~n",[?FUNCTION_NAME]),
     
-
-    ok=application:start(math),
-    42=test_add:add(20,22),
     
+    ok=application:start(hw_conbee_app),
+      
     io:format("Stop OK !!! ~p~n",[?FUNCTION_NAME]),
 
     ok.
