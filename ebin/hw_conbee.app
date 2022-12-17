@@ -6,6 +6,6 @@
               {applications,[kernel,stdlib]},
               {env,[]},
               {modules,[conbee,conbee_init,hw_conbee,hw_conbee_server,lgh,
-                        lib_conbee]},
+                        lib_hw_conbee]},
               {licenses,["Apache-2.0"]},
               {links,[]}]}.
