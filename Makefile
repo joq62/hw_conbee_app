@@ -4,6 +4,8 @@ all:
 	rm -rf rebar.lock;
 	rm -rf ebin;
 	mkdir ebin;
+	rebar3 compile;	
+	cp _build/default/lib/*/ebin/* ebin;
 	erlc -I include -o ebin src/*.erl;
 	erlc -I ../../services/hw_conbee/include -o ebin ../../services/hw_conbee/src/*.erl;
 	mkdir tests_ebin;
