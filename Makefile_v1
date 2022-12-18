@@ -3,11 +3,10 @@ all:
 	rm -rf erl_cra*;
 	rm -rf rebar.lock;
 	rm -rf ebin;
-	mkdir ebin;
-	erlc -I include -o ebin src/*.erl;
-	erlc -I ../../services/hw_conbee/include -o ebin ../../services/hw_conbee/src/*.erl;
-	mkdir tests_ebin;
-	erlc -I include -o tests_ebin tests/*.erl;	
+	mkdir ebin;		
+	rebar3 compile;	
+	cp _build/default/lib/*/ebin/* ebin;
+	rm -rf _build;
 	rm -rf tests_ebin;
 	git add -f *;
 	git commit -m $(m);
