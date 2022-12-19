@@ -13,7 +13,7 @@
   1},
  {<<"hw_conbee">>,
   {git,"https://github.com/joq62/hw_conbee.git",
-       {ref,"ebcd52163c0b569f56b4bb6896de29631e5e7320"}},
+       {ref,"5cea33ca30217c4ddfa39124c89e5b80bb98c623"}},
   0},
  {<<"jsx">>,{pkg,<<"jsx">>,<<"3.1.0">>},1},
  {<<"ranch">>,
