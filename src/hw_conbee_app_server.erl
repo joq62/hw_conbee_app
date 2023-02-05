@@ -67,7 +67,7 @@ ping() ->
 %%          {stop, Reason}
 %% --------------------------------------------------------------------
 init([]) -> 
-    rd:rpc_call(nodelog,nodelog,log,[notice,?MODULE_STRING,?LINE,"Servere started"]),
+    sd:cast(nodelog,nodelog,log,[notice,?MODULE_STRING,?LINE,"Servere started"]),
 
     {ok, #state{}}.   
  
