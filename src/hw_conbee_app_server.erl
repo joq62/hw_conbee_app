@@ -67,7 +67,8 @@ ping() ->
 %%          {stop, Reason}
 %% --------------------------------------------------------------------
 init([]) -> 
-    sd:cast(nodelog,nodelog,log,[notice,?MODULE_STRING,?LINE,"Servere started"]),
+%    sd:cast(nodelog,nodelog,log,[notice,?MODULE_STRING,?LINE,"Servere started"]),
+    sd:cast(nodelog,nodelog,log,[notice,?MODULE_STRING,?LINE,["Servere started"]]),
 
     {ok, #state{}}.   
  
